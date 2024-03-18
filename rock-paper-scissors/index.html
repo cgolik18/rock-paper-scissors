@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Rock, Paper, Scissors</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="gameInfo">
+        <h1>Rock, Paper, Scissors</h1>
+    </div>
+
+    <div class="winnerDiv">
+        <h2 class="winner"></h2>
+    </div>
+
+    <div class="playerSect">
+        <div class="playerSummary">
+            <h2>PLAYER</h2>
+            <h3 class="playerScore">Score: </h3>
+            <h3 class="playerSelection"></h3>
+        </div>
+        <div class="container">
+            <button class=playerOption id="rock"><img src="https://www.pngmart.com/files/23/Cartoon-Rock-PNG.png"></button>
+            <button class=playerOption id="paper"><img src="https://png.pngtree.com/png-clipart/20210312/big/pngtree-hand-drawn-cartoon-piece-of-paper-png-image_6070901.png"></button>
+            <button class=playerOption id="scissors"><img src="https://www.pikpng.com/pngl/b/484-4844279_cartoon-transprent-png-scissors-cartoon-png-clipart.png"></button>
+        </div>
+    </div>
+ `<div class="computerSect">
+        <div class="computerSummary">
+            <h2>COMPUTER</h2>
+            <h3 class="computerScore">Score: </h3>
+            <h3 class="computerSelection"></h3>
+        </div>
+        <div class="container">
+            <button class="rock"><img src="https://www.pngmart.com/files/23/Cartoon-Rock-PNG.png"></button>
+            <button class="paper"><img src="https://png.pngtree.com/png-clipart/20210312/big/pngtree-hand-drawn-cartoon-piece-of-paper-png-image_6070901.png"></button>
+            <button class="scissors"><img src="https://www.pikpng.com/pngl/b/484-4844279_cartoon-transprent-png-scissors-cartoon-png-clipart.png"></button>
+        </div>
+    </div>
+    <div id="gameModal" class="modal">
+        <div class="content">
+            <div class="gameSummary"></div>
+                <h1 class="gameWinner">Winner</h1>
+                <div class="scores">
+                    <h2 class="pFinalScore">Your Final Score:</h2>
+                    <h2 class="cFinalScore">Computer Final Score:</h2>
+                </div>
+                <div class="totals">
+                    <h3 class="playerFinalScore"></h3>
+                    <h3 class="computerFinalScore"></h3>
+                </div>
+            <a><button class="reset" onclick="resetGame()">Play again?</button></a>
+        </div>
+    </div>
+    <script src="game.js"></script>
+ </body>
+</html>
